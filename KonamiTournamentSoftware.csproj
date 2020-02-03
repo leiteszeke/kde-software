@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Ezequiel\Downloads\KDE Software\konami program 19 de noviembre 2010\KonamiTournamentSoftware.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5219A8B1-A5B0-44C4-9384-D6EBF5FBBCAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>KonamiTournamentSoftware</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>2.0.5.2</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DropListItem.cs" />
+    <Compile Include="TournamentLibrary\UserAction.cs" />
+    <Compile Include="TournamentLibrary\TournamentLibrary.cs" />
+    <Compile Include="TournamentLibrary\PrinterSplits.cs" />
+    <Compile Include="TournamentLibrary\PrinterSplitList.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\TournMatchResult.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\IBaseObject.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournMatch.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\TournMatchSortOrder.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournMatchArray.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournament.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\TournamentFormat.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\TournamentStyle.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\TournamentPairingStructure.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\StaffPosition.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\EventType.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournamentArray.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\IPlayer.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\PlayerSortOrder.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\IPlayerArray.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ILocation.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ILocationArray.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\CutType.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournPlayer.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournPlayerArray.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\IPenalty.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\InfractionEnum.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\InfractionEnumCodes.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\OldPenaltyEnum.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\PenaltyEnum.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\IPenaltyArray.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournStaff.cs" />
+    <Compile Include="TournamentLibrary\Interfaces\ITournStaffArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\Location.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\LocationArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PenaltyClass.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\Player.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayer.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayerArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayerSort_ById.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayerSort_ByIdByesLast.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayerSort_ByLastName.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayerSort_ByName.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournPlayerSort_ByRank.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\MatchHistoryList.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournMatch.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournMatchArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournMatchSort_ByPoints.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournMatchSort_ByPointsByesLast.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournMatchSort_ByRoundTableByesLast.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PlayerArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PlayerSort_ById.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PlayerSort_ByIdByesLast.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PlayerSort_ByLastName.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PlayerSort_ByFirstName.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\Tournament.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournamentArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\PlayerPoints.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\Utility.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\Countries.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournStaff.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournStaffArray.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournStaffSort_ById.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournStaffSort_ByPosition.cs" />
+    <Compile Include="TournamentLibrary\Data_Layer\TournStaffSort_ByLastName.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\PrintBatchCounts.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\Engine.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\Settings.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\Common.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\CommonEnumLists.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\InfractionListItem.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\PenaltyListItem.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\ListItemTournamentStyle.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\ListItemTournamentStructure.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\ListItemEventType.cs" />
+    <Compile Include="TournamentLibrary\BusinessLogic\ListItemPenaltyEnum.cs" />
+    <Compile Include="Konami\DialogWizardUndropPlayer.cs" />
+    <Compile Include="Konami\DialogMatchHistory.cs" />
+    <Compile Include="Konami\DialogChangePlayerName.cs" />
+    <Compile Include="Konami\TournamentSettings.cs" />
+    <Compile Include="Konami\DialogNewPerson.cs" />
+    <Compile Include="Konami\DialogPrintPairings.cs" />
+    <Compile Include="Konami\DialogPrinterSelect.cs" />
+    <Compile Include="Konami\DialogLogViewer.cs" />
+    <Compile Include="Konami\DialogPairingsSplit.cs" />
+    <Compile Include="Konami\DialogResultSlips.cs" />
+    <Compile Include="Konami\DialogMemoTextBox.cs" />
+    <Compile Include="Konami\DialogChangePlayerId.cs" />
+    <Compile Include="Konami\DialogPlayoffs.cs" />
+    <Compile Include="Konami\DialogPrintPlayers.cs" />
+    <Compile Include="Konami\DialogBatchPrinting.cs" />
+    <Compile Include="Konami\LocationSettings.cs" />
+    <Compile Include="Konami\DialogWizardChangeMatchResult.cs" />
+    <Compile Include="Konami\DialogSimpleTextBox.cs" />
+    <Compile Include="Konami\DialogPenalties.cs" />
+    <Compile Include="Konami\Program.cs" />
+    <Compile Include="Konami\DialogAssignedSeats.cs" />
+    <Compile Include="Konami\MainForm.cs" />
+    <Compile Include="Konami\DialogAbout.cs" />
+    <Compile Include="Konami\DialogSelectPerson.cs" />
+    <Compile Include="Konami\ManualPairings.cs" />
+    <Compile Include="Konami\DialogNewPenalty.cs" />
+    <Compile Include="Konami\PreferencesDialog.cs" />
+    <Compile Include="Konami\DialogPrintStandings.cs" />
+    <Compile Include="Konami\ManualPairingObject.cs" />
+    <Compile Include="Konami\Properties\Settings.cs" />
+    <Compile Include="Konami\Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Konami\DialogAbout.resx" />
+    <EmbeddedResource Include="Konami\DialogAssignedSeats.resx" />
+    <EmbeddedResource Include="Konami\DialogBatchPrinting.resx" />
+    <EmbeddedResource Include="Konami\DialogChangePlayerId.resx" />
+    <EmbeddedResource Include="Konami\DialogChangePlayerName.resx" />
+    <EmbeddedResource Include="Konami\DialogLogViewer.resx" />
+    <EmbeddedResource Include="Konami\DialogMatchHistory.resx" />
+    <EmbeddedResource Include="Konami\DialogMemoTextBox.resx" />
+    <EmbeddedResource Include="Konami\DialogNewPenalty.resx" />
+    <EmbeddedResource Include="Konami\DialogNewPerson.resx" />
+    <EmbeddedResource Include="Konami\DialogPairingsSplit.resx" />
+    <EmbeddedResource Include="Konami\DialogPenalties.resx" />
+    <EmbeddedResource Include="Konami\DialogPlayoffs.resx" />
+    <EmbeddedResource Include="Konami\DialogPrinterSelect.resx" />
+    <EmbeddedResource Include="Konami\DialogPrintPairings.resx" />
+    <EmbeddedResource Include="Konami\DialogPrintPlayers.resx" />
+    <EmbeddedResource Include="Konami\DialogPrintStandings.resx" />
+    <EmbeddedResource Include="Konami\DialogResultSlips.resx" />
+    <EmbeddedResource Include="Konami\DialogSelectPerson.resx" />
+    <EmbeddedResource Include="Konami\DialogSimpleTextBox.resx" />
+    <EmbeddedResource Include="Konami\DialogWizardChangeMatchResult.resx" />
+    <EmbeddedResource Include="Konami\DialogWizardUndropPlayer.resx" />
+    <EmbeddedResource Include="Konami\LocationSettings.resx" />
+    <EmbeddedResource Include="Konami\MainForm.resx" />
+    <EmbeddedResource Include="Konami\ManualPairings.resx" />
+    <EmbeddedResource Include="Konami\PreferencesDialog.resx" />
+    <EmbeddedResource Include="Konami\Properties\Resources.resx" />
+    <EmbeddedResource Include="Konami\TournamentSettings.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

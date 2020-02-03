@@ -1,0 +1,68 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: TournamentLibrary.UserAction
+// Assembly: KonamiTournamentSoftware, Version=2.0.5.2, Culture=neutral, PublicKeyToken=null
+// MVID: 483A642A-5E06-4FA2-84C2-0C0BDD8D9DBE
+// Assembly location: C:\Users\Ezequiel\Downloads\KDE Software\konami program 19 de noviembre 2010\KonamiTournamentSoftware.exe
+
+namespace TournamentLibrary
+{
+  public enum UserAction
+  {
+    None,
+    Assigned_Seats,
+    Cancel_Pairings,
+    Calculate_Ties,
+    Change_Current_Table,
+    Change_Player_ID,
+    Change_Player_Name,
+    Change_Visible_Pairings_Round,
+    Change_Visible_Standings_Round,
+    Clear_Player_Window,
+    Cut_To_Playoffs,
+    Drop_Player,
+    Enroll_From_Another_Tournament,
+    Enroll_Player,
+    Export_Matches,
+    Export_Player_List,
+    Find_Players_Paired_Twice,
+    Hide_Completed_Matches,
+    Import_Player_List,
+    Manual_Pairings,
+    Merge_Round_Results,
+    Open_Penalties_Dialog,
+    Pair_Next_Round,
+    Print,
+    Print_Brackets,
+    Print_Match_Result_Slips,
+    Print_Pairings_By_Player,
+    Print_Pairings_By_Table,
+    Print_Player_List,
+    Print_Player_Notes,
+    Print_Random_Matches,
+    Print_Result_Slips,
+    Print_Standings,
+    Print_Unreported_Matches,
+    Program_Options,
+    Program_Start,
+    Program_Stop,
+    Recalc_Standings,
+    ReEnroll_Player,
+    RePair_Round,
+    Seat_All_Players,
+    Set_Pairings_Printout_Ranges,
+    Set_Starting_Table,
+    Standings_Include_Dropped_Players,
+    Submit_Match_Result,
+    Tourn_Close,
+    Tourn_New,
+    Tourn_Open,
+    Tourn_Save,
+    Tourn_Update,
+    Verify_Repeat_Matches,
+    View_Pairings,
+    View_Pairings_By_Player,
+    View_Player_Match_History,
+    View_Players,
+    View_Standings,
+  }
+}
